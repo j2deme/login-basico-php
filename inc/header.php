@@ -11,6 +11,18 @@
 
 <body>
   <header class="container">
-    <h1>Login en PHP</h1>
+    <nav>
+      <a href="index.php">
+        <h1>Login en PHP</h1>
+      </a>
+      <ul>
+        <?php if (isset($_SESSION['user'])): ?>
+          <li><a href="dashboard.php">Editar mensaje</a></li>
+        <?php else: ?>
+          <li><a href="login.php">Iniciar sesión</a></li>
+          <li><a href="register.php">Registrarse</a></li>
+        <?php endif; ?>
+      </ul>
+    </nav>
   </header>
   <main class="container">
