@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <?php include 'inc/header.php'; ?>
 
 <article class="form">
