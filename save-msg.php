@@ -17,4 +17,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   $_SESSION['user']['mensaje'] = $mensaje;
 }
-header('Location: dashboard.php');
+header('Location: index.php');
