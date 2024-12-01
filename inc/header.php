@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -18,6 +19,7 @@
       <ul>
         <?php if (isset($_SESSION['user'])): ?>
           <li><a href="dashboard.php">Editar mensaje</a></li>
+          <li><a href="logout.php">Cerrar sesión</a></li>
         <?php else: ?>
           <li><a href="login.php">Iniciar sesión</a></li>
           <li><a href="register.php">Registrarse</a></li>
