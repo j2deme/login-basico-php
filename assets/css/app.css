@@ -1,0 +1,35 @@
+.form {
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.messages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.message {
+  padding: 1rem;
+  border: 1px solid #dad4c2;
+  border-radius: 0.5rem;
+  min-width: 25%;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message small {
+  position: relative;
+  display: block;
+  text-align: right;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
