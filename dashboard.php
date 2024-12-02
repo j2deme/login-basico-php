@@ -1,4 +1,6 @@
 <?php include 'inc/header.php'; ?>
+<?php if (!isset($_SESSION['user']))
+  header('Location: login.php'); ?>
 
 <article class="form">
   <h2>Bienvenido, <?= $_SESSION['user']['nombre'] ?> <?= $_SESSION['user']['apellidos'] ?></h2>
